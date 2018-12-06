@@ -1,4 +1,4 @@
-include(Artifactory)
+# Depends on https://github.com/backglite/Artifactory.cmake
 
 function(artifactory_fetch_and_check)
     set(one_value_keywords REPO GROUP NAME VERSION)
