@@ -59,6 +59,6 @@ function(artifactory_fetch_and_get_proto)
 
         file(GLOB_RECURSE ARTIFACT_FILE "${ARTIFACTORY_CACHE_DIR}/${AFGP_NAME}-${AFGP_VERSION}.proto")
         file(COPY ${ARTIFACT_FILE} DESTINATION ${AFGP_TARGET_DIR}/tmp)
-        file(RENAME ${AFGP_TARGET_DIR}/tmp/${AFGP_NAME}-${SLR_REQ_API_VERSION}.proto ${AFGP_TARGET_DIR}/${AFGP_NAME}.proto)
+        file(RENAME ${AFGP_TARGET_DIR}/tmp/${AFGP_NAME}-${AFGP_VERSION}.proto ${AFGP_TARGET_DIR}/${AFGP_NAME}.proto)
     endif ()
 endfunction()
